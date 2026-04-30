@@ -7,6 +7,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping
+@CrossOrigin(origins = "http://localhost:5173")
 public class BoardController {
 
     private final BoardService boardService;
@@ -20,9 +21,24 @@ public class BoardController {
         return boardService.getBoards();
     }
 
+    @GetMapping("/boards/{id}")
+    public Board getBoard(@PathVariable Long id){
+        return boardService.getBoard(id);
+    }
+
     @PostMapping("/boards")
-    public Board createBoard(@RequestBody Map<String, String> body){
-        String title = body.get("title");
-        return boardService.createBoards(title);
+    public Board createBoard(@RequestBody Board board){
+        return boardService.createBoard(board);
+    }
+
+    @PutMapping("/boards/{id}")
+    public Board updateBoard(@PathVariable Long id, @RequestBody Board board){
+        return boardService.updateBoard(id, board);
+    }
+
+    @DeleteMapping("/boards/{id}")
+    public String deleteBoard(@PathVariable Long id){
+        boardService.deleteBoard(id);
+        return "삭제됨: " + id;
     }
 }
