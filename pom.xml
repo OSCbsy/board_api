@@ -32,7 +32,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        
                 <!-- Spring Data JPA: Entity, Repository, Hibernate 사용 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,6 +48,12 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+                <!-- Spring Boot 4용 H2 Console -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-h2console</artifactId>
         </dependency>
         
         <!-- Lombok -->
