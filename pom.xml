@@ -32,6 +32,20 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+
+                <!-- Spring Data JPA: Entity, Repository, Hibernate 사용 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- H2 Database: 개발용 인메모리 DB -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
         <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>

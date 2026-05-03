@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/boards")
 @CrossOrigin(origins = "http://localhost:5173")
 public class BoardController {
 
@@ -16,29 +16,31 @@ public class BoardController {
         this.boardService = boardService;
     }
 
-    @GetMapping("/boards")
+    @GetMapping
     public List<Board> getBoards(){
         return boardService.getBoards();
     }
 
-    @GetMapping("/boards/{id}")
+    @GetMapping("/{id}")
     public Board getBoard(@PathVariable Long id){
         return boardService.getBoard(id);
     }
 
-    @PostMapping("/boards")
+    @PostMapping
     public Board createBoard(@RequestBody Board board){
         return boardService.createBoard(board);
     }
 
-    @PutMapping("/boards/{id}")
+    @PutMapping("/{id}")
     public Board updateBoard(@PathVariable Long id, @RequestBody Board board){
         return boardService.updateBoard(id, board);
     }
 
-    @DeleteMapping("/boards/{id}")
+    @DeleteMapping("/{id}")
     public String deleteBoard(@PathVariable Long id){
         boardService.deleteBoard(id);
         return "삭제됨: " + id;
     }
+
+
 }
