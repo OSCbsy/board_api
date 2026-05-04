@@ -27,8 +27,9 @@ public class BoardController {
     }
 
     @PostMapping
-    public Board createBoard(@RequestBody Board board){
-        return boardService.createBoard(board);
+    public void createBoard(@RequestBody Board board){
+        boardService.createBoard(board);
+         
     }
 
     @PutMapping("/{id}")

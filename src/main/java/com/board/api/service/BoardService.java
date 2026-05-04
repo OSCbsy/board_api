@@ -102,7 +102,7 @@ public class BoardService {
 
     //특정 id를 가진 게시글 하나를 조회하는 메서드야.
 
-    public Board createBoard(Board board) {
+    public Board createBoard(final Board board) {
         String now = LocalDateTime.now().toString();
 
         board.setId(nextId++);
