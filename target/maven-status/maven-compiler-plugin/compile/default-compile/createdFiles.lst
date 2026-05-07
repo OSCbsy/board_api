@@ -1,7 +1,2 @@
-com\board\api\controller\HomeController.class
-com\board\api\service\BoardService$1.class
-com\board\api\domain\Board.class
-com\board\api\service\BoardService.class
-com\board\api\controller\BoardPageController.class
 com\board\api\BoardApiApplication.class
 com\board\api\controller\BoardController.class

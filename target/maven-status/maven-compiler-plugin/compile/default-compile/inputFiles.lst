@@ -1,6 +1,5 @@
-C:\Users\oscbs\Desktop\board\board_api\src\main\java\com\board\api\BoardApiApplication.java
-C:\Users\oscbs\Desktop\board\board_api\src\main\java\com\board\api\controller\BoardController.java
-C:\Users\oscbs\Desktop\board\board_api\src\main\java\com\board\api\controller\BoardPageController.java
-C:\Users\oscbs\Desktop\board\board_api\src\main\java\com\board\api\controller\HomeController.java
-C:\Users\oscbs\Desktop\board\board_api\src\main\java\com\board\api\domain\Board.java
-C:\Users\oscbs\Desktop\board\board_api\src\main\java\com\board\api\service\BoardService.java
+C:\Users\oscbs\OneDrive\Desktop\board\board_api\src\main\java\com\board\api\BoardApiApplication.java
+C:\Users\oscbs\OneDrive\Desktop\board\board_api\src\main\java\com\board\api\controller\BoardController.java
+C:\Users\oscbs\OneDrive\Desktop\board\board_api\src\main\java\com\board\api\domain\Board.java
+C:\Users\oscbs\OneDrive\Desktop\board\board_api\src\main\java\com\board\api\repository\BoardRepository.java
+C:\Users\oscbs\OneDrive\Desktop\board\board_api\src\main\java\com\board\api\service\BoardService.java
